@@ -10,7 +10,7 @@ The script ***OptionalEx.m*** provide the solution for these optional exercises.
 In this section, we will observe how the regularization parameter (λ) affects the bias-variance of regularized polynomial regression. 
 
 Using λ = 0, 1, 100, we will obtain the result figure like:
-![Op3_2](https://github.com/AnnickWONG/Standford_machine_learning/blob/Studying/Week6/Optional%20Exercise/Op3_2.png)
+![Op3_2](https://github.com/AnnickWONG/Standford_machine_learning/blob/main/Week6/Optional%20Exercise/Op3_2.png)
 
 From the result, we could tell that:
 * When λ is too small (λ=0), the learning algorithm is suffering from **high variance**, and the model is **overfitting** the training set. Thus, the error between the training data and the cross validation data is large.
@@ -26,4 +26,4 @@ In general, when we use learning curves to debug, an avarage error across multip
 We can reuse the function ***learningCurve.m*** to calculate the traning error and the cross validation error. Using a **for-loops** to generate the repeated multiple times we want, and in each loop, we randomly change the example order. Note that the example and the label order should be changed at the same time.
 
 After average of all the error, we will obtain the result figure like:
-![Op3_5](https://github.com/AnnickWONG/Standford_machine_learning/blob/Studying/Week6/Optional%20Exercise/Op3_5.png)
+![Op3_5](https://github.com/AnnickWONG/Standford_machine_learning/blob/main/Week6/Optional%20Exercise/Op3_5.png)
