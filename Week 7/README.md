@@ -4,7 +4,7 @@
 ### Question 1
 Suppose you have trained an SVM classifier with a Gaussian kernel, and it learned the following decision boundary on the training set:
 
-![decision boundary](https://github.com/AnnickWONG/Standford_machine_learning/blob/Studying/Week%207/image/Q1_dicesion_boundary.png)
+![decision boundary](https://github.com/AnnickWONG/Standford_machine_learning/blob/main/Week%207/image/Q1_dicesion_boundary.png)
 
 You suspect that the SVM is underfitting your dataset.  Should you try increasing or decreasing C?  Increasing or decreasing σ² ?
  
@@ -18,11 +18,11 @@ The formula for the Gaussian kernel is given by
 
 The figure below shows a plot of <img src="http://chart.googleapis.com/chart?cht=tx&chl=f_1 =similarity(x,l^{(1)})" style="border:none;"> when  σ² = 1.
 
-![plot of f1](https://github.com/AnnickWONG/Standford_machine_learning/blob/Studying/Week%207/image/Q2_f1.png)
+![plot of f1](https://github.com/AnnickWONG/Standford_machine_learning/blob/main/Week%207/image/Q2_f1.png)
 
 Which of the following is a plot of f₁ when σ² = 2?
 
-![answer](https://github.com/AnnickWONG/Standford_machine_learning/blob/Studying/Week%207/image/Q2_answers.png)
+![answer](https://github.com/AnnickWONG/Standford_machine_learning/blob/main/Week%207/image/Q2_answers.png)
 
 **Answer:** D
 
@@ -33,7 +33,7 @@ Which of the following is a plot of f₁ when σ² = 2?
 The SVM solves <img src="http://chart.googleapis.com/chart?cht=tx&chl=C \min_\theta \sum_{i=1}^m y^{(i)} \text{cost}_1(\theta^Tx^{(i)})+(1-y^{(i)}) \text{cost}_0(\theta^Tx^{(i)})+\sum_{j=1}^n \theta_j^2" style="border:none;">
 where the functions <img src="http://chart.googleapis.com/chart?cht=tx&chl=\text{cost}_0(z)" style="border:none;"> and <img src="http://chart.googleapis.com/chart?cht=tx&chl=\text{cost}_1(z)" style="border:none;"> look like this:
 
-![cost_function](https://github.com/AnnickWONG/Standford_machine_learning/blob/Studying/Week%207/image/Q3_cost_function.png)
+![cost_function](https://github.com/AnnickWONG/Standford_machine_learning/blob/main/Week%207/image/Q3_cost_function.png)
 
 The first term in the objective is:
  <img src="http://chart.googleapis.com/chart?cht=tx&chl=C\min_\theta \sum_{i=1}^m y^{(i)} \text{cost}_1(\theta^Tx^{(i)}) + (1-y^{(i)}) \text{cost}_0(\theta^Tx^{(i)})" style="border:none;"> 
