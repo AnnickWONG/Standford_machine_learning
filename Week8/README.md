@@ -85,3 +85,4 @@ Which of the following are recommended applications of PCA? Select all that appl
 |---|---|
 |Data compression: Reduce the dimension of your data, so that it takes up less memory / disk space.|Data compression: Reduce the dimension of your data, so that it takes up less memory / disk space.|
 |Data compression: Reduce the dimension of your input data <img src="https://latex.codecogs.com/svg.image?x^{(i)}" />, which will be used in a supervised learning algorithm (i.e., use PCA so that your supervised learning algorithm runs faster).|If your learning algorithm is too slow because the input dimension is too high, then using PCA to speed it up is a reasonable choice.|
+|Data visualization: Reduce data to 2D (or 3D) so that it can be plotted.|This is a good use of PCA, as it can give you intuition about your data that would otherwise be impossible to see.|
