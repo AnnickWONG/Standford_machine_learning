@@ -44,11 +44,11 @@ Which of the following statements are true? Select all that apply.
 ## Quiz: Principal Component Analysis
 ### Question 1
 Consider the following 2D dataset:
-![Question 1](https://github.com/AnnickWONG/Standford_machine_learning/blob/Week8/Week8/image/Q1.png)
+![Question 1](https://github.com/AnnickWONG/Standford_machine_learning/blob/main/Week8/image/Q1.png)
 
 Which of the following figures correspond to possible values that PCA may return for <img src="https://latex.codecogs.com/svg.image?u^{(1)}" /> (the first eigenvector / first principal component)? Check all that apply (you may have to check more than one figure).
 
-![Q1_answer](https://github.com/AnnickWONG/Standford_machine_learning/blob/Week8/Week8/image/Q1_Answer.png)
+![Q1_answer](https://github.com/AnnickWONG/Standford_machine_learning/blob/main/Week8/image/Q1_Answer.png)
 
 **Answer:** A, B
 
