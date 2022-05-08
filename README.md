@@ -11,3 +11,4 @@ Week | Exercise Number | Content | Optional exvercise
 6 | 5 | [Regularized Linear Regression and Bias v.s.Variance](https://github.com/AnnickWONG/Standford_machine_learning/tree/main/Week6/ex5-octave)|[3 opt_ex](https://github.com/AnnickWONG/Standford_machine_learning/tree/main/Week6/Optional%20Exercise)
 7 | 6 | [Support Vector Machine](https://github.com/AnnickWONG/Standford_machine_learning/tree/main/Week%207/ex6-octave)|
 8 | 7 | [K-means Clustering and Principal Component Analysis](https://github.com/AnnickWONG/Standford_machine_learning/tree/main/Week8/ex7-octave)
+9 | 8 | [Anomaly Detection and Recommender Systems](https://github.com/AnnickWONG/Standford_machine_learning/tree/main/Week9/ex8-octave)
