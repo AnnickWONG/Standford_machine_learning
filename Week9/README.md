@@ -47,7 +47,7 @@ You have two features <img src="https://latex.codecogs.com/svg.image?x_{1}"/>= v
 ### Question 5
  You have a 1-D dataset <img src="https://latex.codecogs.com/svg.image?\left\{x^{(1)},...,x^{(m)}&space;\right\}"/>and you want to detect outliers in the dataset. You first plot the dataset and it looks like this:
  
- ![Q5](https://github.com/AnnickWONG/Standford_machine_learning/blob/Week9/Week9/image/Q5.png)
+ ![Q5](https://github.com/AnnickWONG/Standford_machine_learning/blob/main/Week9/image/Q5.png)
  
  Suppose you fit the gaussian distribution parameters <img src="https://latex.codecogs.com/svg.image?\mu&space;_{1}" /> and <img src="https://latex.codecogs.com/svg.image?\sigma_{1}^{2}&space;" />  to this dataset. Which of the following values for <img src="https://latex.codecogs.com/svg.image?\mu&space;_{1}" /> and <img src="https://latex.codecogs.com/svg.image?\sigma_{1}^{2}&space;" /> might you get?
 
@@ -55,7 +55,7 @@ You have two features <img src="https://latex.codecogs.com/svg.image?x_{1}"/>= v
 
 **Explanation:** The data are centered around -3 and tail most of the points lie in [-5, -1].
 
-## Recommender Systems
+## Quiz: Recommender Systems
 ### Question 1
 Suppose you run a bookstore, and have ratings (1 to 5 stars) of books.  Your collaborative filtering algorithm has learned a parameter vector <img src="https://latex.codecogs.com/svg.image?\theta&space;^{(j)}" /> for user <img src="https://latex.codecogs.com/svg.image?j"/>, and a feature<img src="https://latex.codecogs.com/svg.image?x^{(i)}"/> for each book.  You would like to compute the "training error", meaning the average squared error of your system's predictions on all the ratings that you have gotten from your users.  Which of these are correct ways of doing so (check all that apply)?
 For this problem, let <img src="https://latex.codecogs.com/svg.image?m"/> be the total number of ratings you have gotten from your users.  (Another way of saying this is <img src="https://latex.codecogs.com/svg.image?m=\sum&space;_{i=1}^{n_{m}}\sum&space;_{j=1}^{n_{u}}r(i,j)"/>.  [Hint: Two of the four options below are correct.]
