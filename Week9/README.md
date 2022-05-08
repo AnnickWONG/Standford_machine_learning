@@ -62,7 +62,9 @@ For this problem, let <img src="https://latex.codecogs.com/svg.image?m"/> be the
 
 **Answer:**
 * <img src="https://latex.codecogs.com/svg.image?\frac{1}{m}\sum&space;_{(i,j):r(i,j)=1}((\theta&space;^{(j)})^{T}x^{(i)}-y^{(i,j)})^{2}" />
-* <img src="https://latex.codecogs.com/svg.image?\frac{1}{m}\sum&space;_{(i,j):r(i,j)=1}(\sum&space;_{k=1}^{n}(\theta&space;^{(j)})_{k}^{T}x_{k}^{(i)}-y^{(i,j)})^{2}"/>
+* <img src="https://latex.codecogs.com/svg.image?\frac{1}{m}\sum&space;_{(i,j):r(i,j)=1}(\sum&space;_{k=1}^{n}(\theta&space;^{(j)})_{k}x_{k}^{(i)}-y^{(i,j)})^{2}" />
+* <img src="https://latex.codecogs.com/svg.image?\frac{1}{m}\sum&space;_{i=1}^{n_{m}}\sum&space;_{j:r(i,j)=1}(\sum&space;_{k=1}^{n}(\theta&space;^{(j)})_{k}x_{k}^{(i)}-y^{(i,j)})^{2}"/>
+* <img src="https://latex.codecogs.com/svg.image?\frac{1}{m}\sum&space;_{j=1}^{n_{u}}\sum&space;_{j:r(i,j)=1}(\sum&space;_{k=1}^{n}(\theta&space;^{(j)})_{k}x_{k}^{(i)}-y^{(i,j)})^{2}" />
 
 
 ### Question 2
@@ -70,13 +72,15 @@ In which of the following situations will a collaborative filtering system be th
 
 **Answer:**
 * You own a clothing store that sells many styles and brands of jeans. You have collected reviews of the different styles and brands from frequent shoppers, and you want to use these reviews to offer those shoppers discounts on the jeans you think they are most likely to purchase
-* You're an artist and hand-paint portraits for your clients.  Each client gets a different portrait (of themselves) and gives you 1-5 star rating feedback, and each client purchases at most 1 portrait.  You'd like to predict what rating your next customer will give you.
+* You run an online bookstore and collect the ratings of many users. You want to use this to identify what books are "similar" to each other (i.e., if one user likes a certain book, what are other books that she might also like?)
 
 
 ### Question 3
 You run a movie empire, and want to build a movie recommendation system based on collaborative filtering.  There were three popular review websites (which we'll call A, B and C) which users to go to rate movies, and you have just acquired all three companies that run these websites.  You'd like to merge the three companies' datasets together to build a single/unified system.  On website A, users rank a movie as having 1 through 5 stars. On website B, users rank on a scale of 1 - 10, and decimal values (e.g., 7.5) are allowed. On website C, the ratings are from 1 to 100.  You also have enough information to identify users/movies on one website with users/movies on a different website.  Which of the following statements is true?
 
-**Answer:** You can merge the three datasets into one, but you should first normalize each dataset separately by subtracting the mean and then dividing by (max - min) where the max and min (5-1) or (10-1) or (100-1) for the three websites respectively.
+**Answer:** 
+* You can merge the three datasets into one, but you should first normalize each dataset separately by subtracting the mean and then dividing by (max - min) where the max and min (5-1) or (10-1) or (100-1) for the three websites respectively.
+* You can merge the three datasets into one, but you should first normalize each dataset's ratings (say rescale each dataset's ratings to a 1-100 range).
 
 ### Question 4
 Which of the following are true of collaborative filtering systems? Check all that apply.
@@ -84,6 +88,8 @@ Which of the following are true of collaborative filtering systems? Check all th
 **Answer:**
 * Even if each user has rated only a small fraction of all of your products (so <img src="https://latex.codecogs.com/svg.image?r(i,j)=0"  /> for the vast majority of <img src="https://latex.codecogs.com/svg.image?(i,j)"  /> pairs), you can still build a recommender system by using collaborative filtering.
 * For collaborative filtering, it is possible to use one of the advanced optimization algoirthms (L-BFGS/conjugate gradient/etc.) to solve for both the <img src="https://latex.codecogs.com/svg.image?x^{(i)}"/>'s and <img src="https://latex.codecogs.com/svg.image?\theta^{(j)}"/> 's simultaneously.
+* If you have a dataset of users ratings' on some products, you can use these to predict one user's preferences on products he has not rated.
+* Recall that the cost function for the content-based recommendation system is <img src="https://latex.codecogs.com/svg.image?J(\theta&space;)=\frac{1}{2}\sum&space;_{j=1}^{n_{u}}\sum&space;_{i:r(i,j)=1}((\theta&space;^{(j)})^{T}x^{(i)}-y^{(i,j)})^{2}&plus;\frac{\lambda&space;}{2}\sum&space;_{j=1}^{n_{u}}\sum&space;_{k=1}^{n}(\theta&space;_{k}^{(j)})^{2}" /> . Suppose there is only one user and he has rated every movie in the training set. This implies that <img src="https://latex.codecogs.com/svg.image?n_{u}=1"/> and <img src="https://latex.codecogs.com/svg.image?r(i,j)=1" /> for every <img src="https://latex.codecogs.com/svg.image?(i,j)"/>. In this case, the cost function <img src="https://latex.codecogs.com/svg.image?J(\theta&space;)" /> is equivalent to the one used for regularized linear regression.
 
 ### Question 5
 Suppose you have two matrices <img src="https://latex.codecogs.com/svg.image?A" title="https://latex.codecogs.com/svg.image?A" /> and <img src="https://latex.codecogs.com/svg.image?B"/>, where <img src="https://latex.codecogs.com/svg.image?A" title="https://latex.codecogs.com/svg.image?A" /> is 5x3 and <img src="https://latex.codecogs.com/svg.image?B"/> is 3x5. Their product is <img src="https://latex.codecogs.com/svg.image?C=AB"/>, a 5x5 matrix. Furthermore, you have a 5x5 matrix <img src="https://latex.codecogs.com/svg.image?R" /> where every entry is 0 or 1. You want to find the sum of all elements <img src="https://latex.codecogs.com/svg.image?C(i,j)"/> for which the corresponding <img src="https://latex.codecogs.com/svg.image?R(i,j)"/>  is 1, and ignore all elements <img src="https://latex.codecogs.com/svg.image?C(i,j)"/>  where <img src="https://latex.codecogs.com/svg.image?R(i,j)=0"/>. One way to do so is the following code:
@@ -105,3 +111,4 @@ Which of the following pieces of Octave code will also correctly compute this to
 **Answer:**     
 * total = sum(sum((A * B) .* R))
 * C = A * B; total = sum(sum(C(R == 1)))
+* C = (A * B) .* R; total = sum(C(:));
