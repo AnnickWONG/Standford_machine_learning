@@ -27,7 +27,7 @@ What are the benefits of performing a ceiling analysis?  Check all that apply.
 ### Question 4
 Suppose you are building an object classifier, that takes as input an image, and recognizes that image as either containing a car (y=1) or not (y=0).  For example, here are a positive example and a negative example:
 
-![Q4]()
+![Q4](https://github.com/AnnickWONG/Standford_machine_learning/blob/Week12/Week11/images/Q4.png)
 
 After carefully analyzing the performance of your algorithm, you conclude that you need more positive (y=1y=1) training examples. Which of the following might be a good way to get additional positive examples?
 
@@ -39,11 +39,11 @@ After carefully analyzing the performance of your algorithm, you conclude that y
 ### Question 5
 Suppose you have a PhotoOCR system, where you have the following pipeline:
 
-![Q5_pipeline]()
+![Q5_pipeline](https://github.com/AnnickWONG/Standford_machine_learning/blob/Week12/Week11/images/Q5_pipeline.png)
 
 You have decided to perform a ceiling analysis on this system, and find the following:
 
-![Q5_accuracy]()
+![Q5_accuracy](https://github.com/AnnickWONG/Standford_machine_learning/blob/Week12/Week11/images/Q5_accuracy.png)
 
 Which of the following statements are true?
 
